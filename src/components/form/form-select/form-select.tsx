@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/select";
 import { FormSelectProps } from "./form-select.types";
 
-export function FormSelect({
+export default function FormSelect({
   name,
   label,
   placeholder = "Select an option",

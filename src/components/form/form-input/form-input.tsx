@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "../../ui/label";
 import { FormInputProps } from "./form-input.types";
 
-export const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
+const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
   ({ name, label, description, type = "text", ...props }, ref) => {
     const { control } = useFormContext();
 
@@ -64,3 +64,5 @@ export const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
 );
 
 FormInput.displayName = "FormInput";
+
+export default FormInput;

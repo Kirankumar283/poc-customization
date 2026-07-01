@@ -26,7 +26,7 @@ import {
 
 import { FormComboboxProps } from "./form-combobox.types";
 
-export function FormCombobox<T extends string = string>({
+export default function FormCombobox<T extends string = string>({
   name,
   label,
   placeholder = "Select option",
